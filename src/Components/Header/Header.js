@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "../Nav/Nav";
-import profilepic from "../../assets/profilepic.png";
 import media from "../../media";
 
 const HeadingWrapper = styled.header`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   padding: 0px;
   ${media.tablet`
     padding: 2rem 3rem 0rem 3rem;
@@ -33,6 +32,7 @@ const NameWrapper = styled.div`
 `;
 
 const HeaderName = styled.h1`
+  color: #ccd6f6;
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
@@ -46,30 +46,16 @@ const NameUnderline = styled.div`
   height: 6px;
   margin-top: 0.5rem;
   max-width: 25%;
-  background-color: #4b6cc1;
+  background-color: #62fad8;
   border-radius: 1000px;
-`;
-
-const NameNavWrap = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  padding-left: 1rem;
-  ${media.desktop`
-    padding-left: 2rem;
-    `}
 `;
 
 const Header = () => {
   return (
     <HeadingWrapper>
-      <ProfileImage src={profilepic} />
-      <NameNavWrap>
-        <NameWrapper>
-          <HeaderName>ANDREW SPIVEY</HeaderName>
-          <NameUnderline />
-        </NameWrapper>
-        <Nav />
-      </NameNavWrap>
+      <NameWrapper>
+        <NameUnderline />
+      </NameWrapper>
     </HeadingWrapper>
   );
 };

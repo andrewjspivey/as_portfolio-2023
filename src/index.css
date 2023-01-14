@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: Rubik, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Calibre, SF Mono, SF Mono, monospace, sans-serif;
+  color: #81a7bd;
 }
 
 code {

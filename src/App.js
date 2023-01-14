@@ -1,10 +1,16 @@
 import Home from "./Components/Home/Home";
+import Nav from "./Components/Nav/Nav";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./global";
+import { theme } from "./theme";
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Nav />
       <Home />
-    </div>
+    </ThemeProvider>
   );
 }
 
