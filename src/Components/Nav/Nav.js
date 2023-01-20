@@ -116,7 +116,7 @@ const NavLink = styled.a`
   `};
 `;
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   outline: none;
   border: 1px solid ${({ theme }) => theme.primaryHover};
   color: ${({ theme }) => theme.primaryHover};
@@ -193,19 +193,19 @@ const Nav = () => {
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>01.</StyledNumber>
-            <NavLink>WORK</NavLink>
+            <NavLink>ABOUT</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>02.</StyledNumber>
-            <NavLink>PROJECTS</NavLink>
+            <NavLink>EXPERIENCE</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>03.</StyledNumber>
-            <NavLink>ABOUT</NavLink>
+            <NavLink>PROJECTS</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
@@ -223,19 +223,19 @@ const Nav = () => {
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>01.</StyledNumber>
-            <NavLink>WORK</NavLink>
+            <NavLink>ABOUT</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>02.</StyledNumber>
-            <NavLink>PROJECTS</NavLink>
+            <NavLink>EXPERIENCE</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
             <StyledNumber>03.</StyledNumber>
-            <NavLink>ABOUT</NavLink>
+            <NavLink>PROJECTS</NavLink>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>

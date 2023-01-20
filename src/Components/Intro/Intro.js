@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import media from "../../media";
+import AndrewSpivey_Resume from "../../assets/AndrewSpivey_Resume.pdf";
 
 const IntroWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
   justify-content: flex-start;
-  ${media.tablet`
-    /* margin: 0rem 5rem; */
+  ${media.desktop`
+    margin: 1rem 0rem 2rem 0rem;
   `};
   ${media.widescreen`
-    margin: 0rem 6rem;
+    margin: 2rem 6rem;
   `};
 `;
 
@@ -56,12 +57,22 @@ const Intro = () => {
       <IntroName>Andrew Spivey.</IntroName>
       <SubHeading>I bring ideas to life with code.</SubHeading>
       <IntroStatement>
-        I'm a highly motivated and skilled developer from Oakland, CA. I have
-        experience in{" "}
+        I'm a highly motivated and skilled
+        <span style={{ color: "#66FCF1" }}> Software Developer</span> from
+        Oakland, CA. I have experience in{" "}
         <span style={{ color: "#66FCF1" }}>
           JavaScript, React.js, Node.js, HTML, CSS, Python, Django,
         </span>{" "}
-        and many more. I'm eager to learn, and passionate about programming.
+        and{" "}
+        <a
+          style={{ color: "#66FCF1" }}
+          href={AndrewSpivey_Resume}
+          target="_blank"
+        >
+          many more.
+        </a>{" "}
+        My goal is to find an awesome company I can deliver business value to
+        while continuing to level up my skills and grow as a developer.
       </IntroStatement>
     </IntroWrapper>
   );
