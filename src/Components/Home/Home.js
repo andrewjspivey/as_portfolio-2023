@@ -4,6 +4,7 @@ import media from "../../media";
 import Intro from "../Intro/Intro";
 import WorkSection from "../WorkSection/WorkSection";
 import LeftSideMenu from "../LeftSideMenu/LeftSideMenu";
+import AboutMe from "../AboutMe/AboutMe";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -11,10 +12,10 @@ const PageWrapper = styled.div`
   padding: 0rem 1.5rem;
   background-color: #0b0c10;
   ${media.tablet`
-    padding: 1rem 4rem;
+    padding: 1rem 6rem;
   `};
   ${media.desktop`
-    padding: 1rem 8rem;
+    padding: 1rem 9rem;
   `};
 `;
 
@@ -23,6 +24,7 @@ const Home = () => {
     <PageWrapper>
       <LeftSideMenu />
       <Intro />
+      <AboutMe />
       <WorkSection />
     </PageWrapper>
   );
