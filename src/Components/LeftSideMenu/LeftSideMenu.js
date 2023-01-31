@@ -9,13 +9,19 @@ const SideMenuContainer = styled.div`
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: 50px;
+  left: 25px;
   right: auto;
   z-index: 10;
   color: ${({ theme }) => theme.primaryLight};
-  @media (min-width: 767px) {
+  ${media.tablet`
     display: inline;
-  }
+  `}
+  ${media.desktop`
+    left: 50px;
+  `}
+  ${media.widescreen`
+    left: 80px;
+  `}
 `;
 
 const StyledList = styled.ul`
@@ -44,7 +50,7 @@ const LeftSideMenu = () => {
     <SideMenuContainer>
       <StyledList>
         <StyledListItem>
-          <a href="/">
+          <a href="https://github.com/andrewjspivey">
             <FiGithub size="1.5rem" color="#81a7bd" />
           </a>
         </StyledListItem>
