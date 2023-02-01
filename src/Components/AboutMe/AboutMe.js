@@ -71,6 +71,14 @@ const StyledImage = styled.img`
   `}
 `;
 
+const StyledLink = styled.a`
+  color: ${({ theme }) => theme.primaryHover};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const AboutMe = () => {
   return (
     <SectionWrapper>
@@ -87,15 +95,14 @@ const AboutMe = () => {
           </Text>
           <Text>
             My passion for software development blossomed while completing{" "}
-            <a
-              style={{ color: "#66FCF1", textDecoration: "none" }}
+            <StyledLink
               href={
                 "https://generalassemb.ly/education/software-engineering-immersive?ga_campaign=immersive-remote&ga_variation=sei-tile"
               }
               target="_blank"
             >
               General Assembly's Software Engineering Immersive Bootcamp
-            </a>{" "}
+            </StyledLink>{" "}
             in 2020. There, I developed a comprehensive foundation in
             programming, learned the fundamental skills to build full-stack web
             applications on the job, and most importantly, fell in love with
@@ -103,31 +110,22 @@ const AboutMe = () => {
           </Text>
           <Text>
             Since then, I've done work for/with{" "}
-            <a
-              style={{ color: "#66FCF1", textDecoration: "none" }}
-              href={"https://royalambulance.com"}
-              target="_blank"
-            >
+            <StyledLink href={"https://royalambulance.com"} target="_blank">
               Royal Ambulance
-            </a>
+            </StyledLink>
             ,{" "}
-            <a
-              style={{ color: "#66FCF1", textDecoration: "none" }}
-              href={"https://eastbayrecorders.com"}
-              target="_blank"
-            >
+            <StyledLink href={"https://eastbayrecorders.com"} target="_blank">
               East Bay Recorders
-            </a>
+            </StyledLink>
             , and most recently,{" "}
-            <a
-              style={{ color: "#66FCF1", textDecoration: "none" }}
+            <StyledLink
               href={
                 "https://bitwiseindustries.com/services/custom-development/"
               }
               target="_blank"
             >
               Bitwise Industries
-            </a>
+            </StyledLink>
             . At Bitwise, I worked across the stack of client projects as a
             valued asset of a professional development team.
           </Text>
