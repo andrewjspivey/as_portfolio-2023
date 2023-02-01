@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import media from "../../media";
 import AS from "../../assets/AS.png";
+import AndrewSpivey_Resume from "../../assets/AndrewSpivey_Resume.pdf";
 
 const RegularNav = styled.nav`
   display: flex;
@@ -215,7 +216,13 @@ const Nav = () => {
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
-          <StyledButton>RESUME</StyledButton>
+          <a
+            style={{ color: "#66FCF1" }}
+            href={AndrewSpivey_Resume}
+            target="_blank"
+          >
+            <StyledButton>RESUME</StyledButton>
+          </a>
         </StyledListItem>
       </HamburgerMenu>
 
@@ -245,7 +252,13 @@ const Nav = () => {
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
-          <StyledButton>RESUME</StyledButton>
+          <a
+            style={{ color: "#66FCF1" }}
+            href={AndrewSpivey_Resume}
+            target="_blank"
+          >
+            <StyledButton>RESUME</StyledButton>
+          </a>
         </StyledListItem>
       </RegularNav>
     </Menu>

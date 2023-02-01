@@ -28,6 +28,7 @@ const AboutTextWrap = styled.div`
 `;
 
 const Text = styled.p`
+  font-size: 1.25rem;
   margin: 0 0 1rem;
 `;
 
@@ -81,21 +82,61 @@ const AboutMe = () => {
       <AboutContent>
         <AboutTextWrap>
           <Text>
-            Hello, my name is Andrew Spivey
+            Hello! I'm Andrew Spivey, a Developer based in Oakland, CA with the
+            drive and expertise to bring value to your company.
           </Text>
           <Text>
-            fjkdlsaj;dj kflsajdlfj asd;lkfja; lsdjk;la djs ka;ls djkk fjfi oehw;
-            shfnc mdsn nklj;ja aksdjf il asehf k;ldjf ;aslddi ijals k
+            My passion for software development blossomed while completing{" "}
+            <a
+              style={{ color: "#66FCF1", textDecoration: "none" }}
+              href={
+                "https://generalassemb.ly/education/software-engineering-immersive?ga_campaign=immersive-remote&ga_variation=sei-tile"
+              }
+              target="_blank"
+            >
+              General Assembly's Software Engineering Immersive Bootcamp
+            </a>{" "}
+            in 2020. There, I developed a comprehensive foundation in
+            programming, learned the fundamental skills to build full-stack web
+            applications on the job, and most importantly, fell in love with
+            creating software.
           </Text>
           <Text>
-            fjkdlsaj;dj kflsajdlfj asd;lkfja; lsdjk;la djs ka;ls djkk fjfi oehw;
-            shfnc mdsn nklj;ja aksdjf il asehf k;ldjf ;aslddi ijals k more stuff
-            about myself I would like to talk about just testing something here.
+            Since then, I've done work for/with{" "}
+            <a
+              style={{ color: "#66FCF1", textDecoration: "none" }}
+              href={"https://royalambulance.com"}
+              target="_blank"
+            >
+              Royal Ambulance
+            </a>
+            ,{" "}
+            <a
+              style={{ color: "#66FCF1", textDecoration: "none" }}
+              href={"https://eastbayrecorders.com"}
+              target="_blank"
+            >
+              East Bay Recorders
+            </a>
+            , and most recently,{" "}
+            <a
+              style={{ color: "#66FCF1", textDecoration: "none" }}
+              href={
+                "https://bitwiseindustries.com/services/custom-development/"
+              }
+              target="_blank"
+            >
+              Bitwise Industries
+            </a>
+            . At Bitwise, I worked across the stack of client projects as a
+            valued asset of a professional development team.
           </Text>
           <Text>
-            fjkdlsaj;dj kflsajdlfj asd;lkfja; lsdjk;la djs ka;ls djkk fjfi oehw;
-            shfnc mdsn nklj;ja aksdjf il asehf k;ldjf ;aslddi ijals k more stuff
-            about myself I would like to talk about just testing something here.
+            With a background as a former college Quarterback and EMT, I bring a
+            strong work ethic and a passion for making a difference to my work
+            as a developer. I'm always eager to take on new challenges, expand
+            my skills, and collaborate with others to build innovative
+            solutions.
           </Text>
         </AboutTextWrap>
         <ProfilePicWrap>
