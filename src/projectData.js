@@ -1,4 +1,7 @@
 import centripoint_calendar from "./assets/centripoint_calendar.png";
+import calendar_django_code_snap from "./assets/calendar_django_code_snap.png";
+import calendar_django_code_2 from "./assets/calendar_django_code_2.png";
+import calendar_react_codesnippet from "./assets/calendar_react_codesnippet.png";
 import ebrecord from "./assets/ebrecord.png";
 import royal_bay from "./assets/royal_bay.png";
 
@@ -22,7 +25,12 @@ export const projectData = {
         "Acquired new tools/tech such as TypeScript, and Django ORM quickly.",
       sixth: "Tested and fixed many pre-existing bugs requested by client",
     },
-    image: centripoint_calendar,
+    images: [
+      centripoint_calendar,
+      calendar_django_code_snap,
+      calendar_django_code_2,
+      calendar_react_codesnippet,
+    ],
   },
   workProjectTwo: {
     title: "Lead Developer",
@@ -44,7 +52,7 @@ export const projectData = {
       sixth:
         "Conducted thorough testing and debugging to ensure website stability and functionality",
     },
-    image: ebrecord,
+    images: [ebrecord],
   },
   workProjectThree: {
     title: "Developed ETL Program",
@@ -65,6 +73,6 @@ export const projectData = {
       sixth:
         "Consulted with client throughout to complete program as sole developer in 3 months",
     },
-    image: royal_bay,
+    images: [royal_bay],
   },
 };

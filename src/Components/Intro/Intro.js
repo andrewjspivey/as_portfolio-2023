@@ -7,12 +7,11 @@ const IntroWrapper = styled.section`
   display: flex;
   flex-direction: column;
   margin: 1rem 0rem;
-  justify-content: flex-start;
   ${media.desktop`
     margin: 1rem 0rem 2rem 0rem;
   `};
   ${media.widescreen`
-    margin: 2rem 6rem;
+    margin: 0px auto;
   `};
 `;
 
@@ -68,6 +67,7 @@ const Intro = () => {
           style={{ color: "#66FCF1" }}
           href={AndrewSpivey_Resume}
           target="_blank"
+          rel="noreferrer"
         >
           many more.
         </a>{" "}

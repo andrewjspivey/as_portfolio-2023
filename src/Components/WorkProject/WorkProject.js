@@ -3,6 +3,7 @@ import styled from "styled-components";
 import media from "../../media";
 import { StyledButton } from "../Nav/Nav";
 import { TbCaretRight } from "react-icons/tb";
+import ImageSlider from "../ImageSlider/ImageSlider";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -17,22 +18,18 @@ const ProjectContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
   ${media.tablet`
     width: 40%;
   `}
 `;
 
-const StyledImage = styled.img`
-  max-width: 100%;
-  object-fit: contain;
-`;
-
 const Description = styled.div`
   width: 100%;
   align-self: center;
   ${media.tablet`
-    width: 50%;
+    width: 60%;
   `};
 `;
 
@@ -76,15 +73,6 @@ const ButtonContainer = styled.div`
   padding: 1rem;
 `;
 
-const Divider = styled.article`
-  width: 100%;
-  height: 5px;
-  display: block;
-  content: "";
-  border-radius: 1000px;
-  background: ${({ theme }) => theme.primaryLight};
-`;
-
 const ListContainer = styled.div`
   width: 100%;
   margin-bottom: 1rem;
@@ -115,11 +103,6 @@ const ListItem = styled.li`
 
 const IconContainer = styled.div`
   margin-right: 1rem;
-`;
-
-const DateTechWrap = styled.div`
-  display: flex;
-  flex-direction: column;
 `;
 
 const Date = styled.span`
@@ -188,7 +171,11 @@ const WorkProject = ({ project }) => {
           </ButtonContainer> */}
         </Description>
         <ImageContainer>
-          <StyledImage src={project.image} />
+          {/* {project.images &&
+            project.images.map((image, index) => (
+              <StyledImage key={index} src={image} />
+            ))} */}
+          <ImageSlider project={project} />
         </ImageContainer>
       </ProjectContainer>
     </>

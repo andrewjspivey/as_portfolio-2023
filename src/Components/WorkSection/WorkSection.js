@@ -6,11 +6,12 @@ import { projectData } from "../../projectData";
 
 export const SectionWrapper = styled.section`
   padding: 2rem 0rem;
+  max-width: 1000px;
   ${media.tablet`
-    padding: 2rem 1rem;
+    padding: 100px auto;
   `}
   ${media.widescreen`
-    margin: 3rem 6rem;
+    margin: 0px auto;
   `};
 `;
 
