@@ -81,7 +81,7 @@ const StyledLink = styled.a`
 
 const AboutMe = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="about">
       <Header>
         <Title>
           <TitleNumber>01.</TitleNumber>About Me
