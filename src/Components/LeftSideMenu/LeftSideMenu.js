@@ -59,9 +59,6 @@ const LeftSideMenu = () => {
             <FiLinkedin size="1.5rem" color="#81a7bd" />
           </a>
         </StyledListItem>
-        <StyledListItem>df</StyledListItem>
-        <StyledListItem>df</StyledListItem>
-        <StyledListItem>df</StyledListItem>
       </StyledList>
     </SideMenuContainer>
   );

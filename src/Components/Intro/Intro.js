@@ -7,11 +7,14 @@ const IntroWrapper = styled.section`
   display: flex;
   flex-direction: column;
   margin: 1rem 0rem;
+  ${media.tablet`
+    margin: 3rem auto;
+  `};
   ${media.desktop`
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 4rem auto;
   `};
   ${media.widescreen`
-    margin: 0px auto;
+    margin: 5rem auto;
   `};
 `;
 

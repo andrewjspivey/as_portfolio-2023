@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import media from "../../media";
-import { StyledButton } from "../Nav/Nav";
 import { TbCaretRight } from "react-icons/tb";
 import ImageSlider from "../ImageSlider/ImageSlider";
 
@@ -166,15 +165,8 @@ const WorkProject = ({ project }) => {
               </ListItemContainer>
             </StyledList>
           </ListContainer>
-          {/* <ButtonContainer>
-            <StyledButton>View Details</StyledButton>
-          </ButtonContainer> */}
         </Description>
         <ImageContainer>
-          {/* {project.images &&
-            project.images.map((image, index) => (
-              <StyledImage key={index} src={image} />
-            ))} */}
           <ImageSlider project={project} />
         </ImageContainer>
       </ProjectContainer>

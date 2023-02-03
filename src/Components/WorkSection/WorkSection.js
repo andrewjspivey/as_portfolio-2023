@@ -6,12 +6,12 @@ import { projectData } from "../../projectData";
 
 export const SectionWrapper = styled.section`
   padding: 2rem 0rem;
-  max-width: 1000px;
+  max-width: 950px;
   ${media.tablet`
-    padding: 100px auto;
+    margin: 2rem auto;
   `}
   ${media.widescreen`
-    margin: 0px auto;
+    margin: 3rem auto;
   `};
 `;
 
@@ -105,7 +105,7 @@ const WorkSection = () => {
   };
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="experience">
       <Header>
         <Title>
           <TitleNumber>02.</TitleNumber>

@@ -3,8 +3,12 @@ import styled from "styled-components";
 import media from "../../media";
 import AS from "../../assets/AS.png";
 import AndrewSpivey_Resume from "../../assets/AndrewSpivey_Resume.pdf";
+import { Link } from "react-scroll";
 
 const RegularNav = styled.nav`
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -23,7 +27,7 @@ const Menu = styled.nav`
   z-index: 10;
   ${media.tablet`
     flex-flow: row nowrap;
-    padding: 0.75rem 1.5rem;
+    /* padding: 0.75rem 1.5rem; */
   `};
 `;
 
@@ -141,17 +145,14 @@ const LogoContainer = styled.div`
   width: 48px;
   align-items: center;
   ${media.tablet`
-    margin-left: 2rem;
+margin-left: 2rem;
+position: fixed;
   `}
 `;
 
 const Logo = styled.img`
   width: 100%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    fill: rgba(102, 252, 241, 0.8);
-  }
 `;
 
 const StyledNumber = styled.span`
@@ -193,26 +194,62 @@ const Nav = () => {
       <HamburgerMenu hamburgerOpen={hamburgerOpen}>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>01.</StyledNumber>
-            <NavLink>ABOUT</NavLink>
+            <Link
+              onClick={toggleBurger}
+              activeClass="about"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>01.</StyledNumber>
+              <NavLink>ABOUT</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>02.</StyledNumber>
-            <NavLink>EXPERIENCE</NavLink>
+            <Link
+              onClick={toggleBurger}
+              activeClass="experience"
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>02.</StyledNumber>
+              <NavLink>EXPERIENCE</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>03.</StyledNumber>
-            <NavLink>PROJECTS</NavLink>
+            <Link
+              onClick={toggleBurger}
+              activeClass="projects"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>03.</StyledNumber>
+              <NavLink>PROJECTS</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>04.</StyledNumber>
-            <NavLink>CONTACT</NavLink>
+            <Link
+              onClick={toggleBurger}
+              activeClass="contact"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>04.</StyledNumber>
+              <NavLink>CONTACT</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
@@ -220,6 +257,7 @@ const Nav = () => {
             style={{ color: "#66FCF1" }}
             href={AndrewSpivey_Resume}
             target="_blank"
+            rel="noreferrer"
           >
             <StyledButton>RESUME</StyledButton>
           </a>
@@ -229,14 +267,30 @@ const Nav = () => {
       <RegularNav>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>01.</StyledNumber>
-            <NavLink>ABOUT</NavLink>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>01.</StyledNumber>
+              <NavLink>ABOUT</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>02.</StyledNumber>
-            <NavLink>EXPERIENCE</NavLink>
+            <Link
+              // activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <StyledNumber>02.</StyledNumber>
+              <NavLink>EXPERIENCE</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
@@ -256,6 +310,7 @@ const Nav = () => {
             style={{ color: "#66FCF1" }}
             href={AndrewSpivey_Resume}
             target="_blank"
+            rel="noreferrer"
           >
             <StyledButton>RESUME</StyledButton>
           </a>
