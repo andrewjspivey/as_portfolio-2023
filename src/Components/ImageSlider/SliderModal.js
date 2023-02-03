@@ -3,13 +3,18 @@ import styled from "styled-components";
 import { TbCaretLeft, TbCaretRight } from "react-icons/tb";
 import media from "../../media";
 
-const SliderContainer = styled.div`
-  display: flex;
-  align-items: center;
+export const ImageContainer = styled.div`
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  background: transparent;
+  object-fit: cover;
 `;
 
 const StyledImage = styled.img`
-  width: 80%;
+  width: 100%;
   cursor: pointer;
 `;
 
@@ -18,6 +23,7 @@ const SliderModalWrap = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 10;
+  /* width: 100%; */
 `;
 
 const StyledModal = styled.div`
@@ -32,7 +38,7 @@ const StyledModal = styled.div`
   z-index: 9;
   ${media.tablet`
   width: 80%;
-  padding: 1rem;
+  /* padding: 1rem; */
   `};
 `;
 
@@ -75,7 +81,9 @@ const SliderModal = ({ project, startingIndex, showModal, closeModal }) => {
             onClick={handlePrevImage}
             cursor="pointer"
           />
-          <StyledImage src={project.images[currentIndex]} alt="slider" />
+          <ImageContainer>
+            <StyledImage src={project.images[currentIndex]} alt="slider" />
+          </ImageContainer>
           <TbCaretRight
             color="#66FCF1"
             size={64}
