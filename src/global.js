@@ -9,6 +9,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-      background-color: #0B0C10;
+      background-color: #1D1D1D;
   }
   `;

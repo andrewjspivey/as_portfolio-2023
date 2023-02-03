@@ -6,22 +6,22 @@ import AndrewSpivey_Resume from "../../assets/AndrewSpivey_Resume.pdf";
 const IntroWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
   ${media.tablet`
-    margin: 3rem auto;
+    margin: 3rem 0rem 8rem 0rem;
   `};
   ${media.desktop`
-    margin: 4rem auto;
+    margin: 4rem 0rem 8rem 0rem;
   `};
   ${media.widescreen`
-    margin: 5rem auto;
+    margin: 6rem 0rem 8rem 6rem;
   `};
 `;
 
 export const IntroHeading = styled.span`
   color: ${({ theme }) => theme.primaryHover};
   font-family: "SF Mono", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin: 0rem 0rem 1rem 2px;
 `;
@@ -31,12 +31,14 @@ const IntroName = styled.h2`
   font-weight: 600;
   margin: 0;
   font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
   color: ${({ theme }) => theme.primaryLight};
 `;
 
 const SubHeading = styled.h3`
   font-family: "Calibre", sans-serif;
   font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
   margin: 5px 0px;
   color: #81a7bd;
   line-height: 0.9;
@@ -44,24 +46,23 @@ const SubHeading = styled.h3`
 
 export const IntroStatement = styled.p`
   font-family: "Calibre", sans-serif;
-  margin-top: 8px;
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 300;
   color: #81a7bd;
   line-height: 2rem;
-  max-width: 767px;
+  max-width: 850px;
 `;
 
 const Intro = () => {
   return (
     <IntroWrapper>
-      <IntroHeading>Hi, my name is</IntroHeading>
-      <IntroName>Andrew Spivey.</IntroName>
-      <SubHeading>I bring ideas to life with code.</SubHeading>
+      <IntroHeading>Hi, I'm</IntroHeading>
+      <IntroName>Andrew Spivey,</IntroName>
+      <SubHeading>Software Developer.</SubHeading>
       <IntroStatement>
-        I'm a highly motivated and skilled
-        <span style={{ color: "#66FCF1" }}> Software Developer</span> from
-        Oakland, CA. I have experience in{" "}
+        I'm a highly motivated and skilled Software Developer from Oakland, CA.
+        I have experience in{" "}
         <span style={{ color: "#66FCF1" }}>
           JavaScript, React.js, Node.js, HTML, CSS, Python, Django,
         </span>{" "}

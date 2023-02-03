@@ -10,7 +10,7 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0rem 1.5rem;
-  background-color: #0b0c10;
+  background-color: #1d1d1d;
   ${media.tablet`
     padding: 1rem 6rem;
   `};

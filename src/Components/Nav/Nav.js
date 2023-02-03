@@ -144,9 +144,9 @@ const LogoContainer = styled.div`
   object-fit: contain;
   width: 48px;
   align-items: center;
-  ${media.tablet`
-margin-left: 2rem;
-position: fixed;
+  ${media.desktop`
+    margin-left: 1rem;
+    position: fixed;
   `}
 `;
 
@@ -181,7 +181,7 @@ const Nav = () => {
   const toggleBurger = () => setHamburgerOpen(!hamburgerOpen);
 
   return (
-    <Menu id="outer-container">
+    <Menu>
       <LogoContainer>
         <Logo src={AS} alt="AS_logo" aria-label="home icon" />
       </LogoContainer>
@@ -268,11 +268,12 @@ const Nav = () => {
         <StyledListItem>
           <ListItemWrap>
             <Link
-              activeClass="active"
+              activeClass="about"
               to="about"
               spy={true}
               smooth={true}
               duration={500}
+              style={{ cursor: "pointer" }}
             >
               <StyledNumber>01.</StyledNumber>
               <NavLink>ABOUT</NavLink>
@@ -282,11 +283,12 @@ const Nav = () => {
         <StyledListItem>
           <ListItemWrap>
             <Link
-              // activeClass="active"
+              activeClass="experience"
               to="experience"
               spy={true}
               smooth={true}
               duration={500}
+              style={{ cursor: "pointer" }}
             >
               <StyledNumber>02.</StyledNumber>
               <NavLink>EXPERIENCE</NavLink>
@@ -295,14 +297,32 @@ const Nav = () => {
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>03.</StyledNumber>
-            <NavLink>PROJECTS</NavLink>
+            <Link
+              activeClass="projects"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              <StyledNumber>03.</StyledNumber>
+              <NavLink>PROJECTS</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
           <ListItemWrap>
-            <StyledNumber>04.</StyledNumber>
-            <NavLink>CONTACT</NavLink>
+            <Link
+              activeClass="contact"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              style={{ cursor: "pointer" }}
+            >
+              <StyledNumber>04.</StyledNumber>
+              <NavLink>CONTACT</NavLink>
+            </Link>
           </ListItemWrap>
         </StyledListItem>
         <StyledListItem>
