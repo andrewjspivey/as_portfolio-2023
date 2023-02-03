@@ -1,9 +1,13 @@
 import centripoint_calendar from "./assets/centripoint_calendar.png";
 import calendar_django_code_snap from "./assets/calendar_django_code_snap.png";
-import calendar_django_code_2 from "./assets/calendar_django_code_2.png";
-import calendar_react_codesnippet from "./assets/calendar_react_codesnippet.png";
+import calendar_redux_code from "./assets/calendar_redux_code.png";
+import calendar_react_code from "./assets/calendar_react_code.png";
 import ebrecord from "./assets/ebrecord.png";
 import royal_bay from "./assets/royal_bay.png";
+import EBR_blog_pic from "./assets/EBR_blog_pic.png";
+import royal_code_2 from "./assets/royal_code_2.png";
+import royal_code_snip_1 from "./assets/royal_code_snip_1.png";
+import royal_sql_code from "./assets/royal_sql_code.png";
 
 export const projectData = {
   workProjectOne: {
@@ -16,11 +20,11 @@ export const projectData = {
       first:
         "Worked as a contributing member of a professional software development team focusing on client projects - React, Django REST Framework, SCSS",
       second:
-        "Developed and implemented valuable features including a calendar of events for schedulers and coaches/transporters, as well as attendance and survey dashboards (CRUD)",
+        "Worked in agile team, utilizing scrum methodologies and strong Git/Github version control practices",
       third:
         "Demonstrated strong proficiency in React.js, TypeScript, Redux Toolkit, and Django (Python) in a professional development setting",
       fourth:
-        "Worked in agile team, utilizing scrum methodologies and strong Git/Github version control practices",
+        "Developed and implemented valuable features including a calendar of events for schedulers and coaches/transporters, as well as attendance and survey dashboards (CRUD) and more",
       fifth:
         "Acquired new tools/tech such as TypeScript, and Django ORM quickly.",
       sixth: "Tested and fixed many pre-existing bugs requested by client",
@@ -28,8 +32,8 @@ export const projectData = {
     images: [
       centripoint_calendar,
       calendar_django_code_snap,
-      calendar_django_code_2,
-      calendar_react_codesnippet,
+      calendar_redux_code,
+      calendar_react_code,
     ],
   },
   workProjectTwo: {
@@ -38,6 +42,10 @@ export const projectData = {
     company: "East Bay Recorders",
     date: "Nov 2021 - Jan 2022",
     tech: "React, styled-components",
+    links: {
+      live: "https://eastbayrecorders.com/",
+      github: "https://github.com/andrewjspivey/eastbay_recorders",
+    },
     description: {
       first:
         "A React.js web app built for recording company and studio, East Bay Recorders",
@@ -52,7 +60,7 @@ export const projectData = {
       sixth:
         "Conducted thorough testing and debugging to ensure website stability and functionality",
     },
-    images: [ebrecord],
+    images: [ebrecord, EBR_blog_pic],
   },
   workProjectThree: {
     title: "Developed ETL Program",
@@ -73,6 +81,6 @@ export const projectData = {
       sixth:
         "Consulted with client throughout to complete program as sole developer in 3 months",
     },
-    images: [royal_bay],
+    images: [royal_bay, royal_code_2, royal_code_snip_1, royal_sql_code],
   },
 };
