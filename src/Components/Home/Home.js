@@ -23,7 +23,7 @@ const PageWrapper = styled.div`
 
 const Home = () => {
   return (
-    <PageWrapper>
+    <PageWrapper id="top">
       <LeftSideMenu />
       <Intro />
       <AboutMe />

@@ -19,6 +19,7 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: center;
   ${media.tablet`
     width: 40%;
   `}
@@ -118,7 +119,6 @@ export const Tech = styled.span`
 const WorkProject = ({ project }) => {
   return (
     <>
-      {/* <Divider /> */}
       {project && (
         <ProjectContainer>
           <Description>

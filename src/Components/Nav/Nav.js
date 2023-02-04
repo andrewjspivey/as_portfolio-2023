@@ -183,7 +183,16 @@ const Nav = () => {
   return (
     <Menu>
       <LogoContainer>
-        <Logo src={AS} alt="AS_logo" aria-label="home icon" />
+        <Link
+          onClick={toggleBurger}
+          activeClass="experience"
+          to="top"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <Logo src={AS} alt="AS_logo" aria-label="home icon" />
+        </Link>
       </LogoContainer>
       <StyledBurger onClick={toggleBurger} hamburgerOpen={hamburgerOpen}>
         <div></div>
