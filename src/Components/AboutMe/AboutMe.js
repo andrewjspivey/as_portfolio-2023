@@ -27,7 +27,7 @@ const AboutTextWrap = styled.div`
   `};
 `;
 
-const Text = styled.p`
+export const StyledText = styled.p`
   font-size: 1.25rem;
   margin: 0 0 1rem;
 `;
@@ -89,11 +89,11 @@ const AboutMe = () => {
       </Header>
       <AboutContent>
         <AboutTextWrap>
-          <Text>
+          <StyledText>
             Hello! I'm Andrew Spivey, a Developer based in Oakland, CA with the
             drive and expertise to bring value to your company.
-          </Text>
-          <Text>
+          </StyledText>
+          <StyledText>
             My passion for software development blossomed while completing{" "}
             <StyledLink
               href={
@@ -107,8 +107,8 @@ const AboutMe = () => {
             programming, learned the fundamental skills to build full-stack web
             applications on the job, and most importantly, fell in love with
             creating software.
-          </Text>
-          <Text>
+          </StyledText>
+          <StyledText>
             Since then, I've done work for/with{" "}
             <StyledLink href={"https://royalambulance.com"} target="_blank">
               Royal Ambulance
@@ -128,14 +128,14 @@ const AboutMe = () => {
             </StyledLink>
             . At Bitwise, I worked across the stack of client projects as a
             valued asset of a professional development team.
-          </Text>
-          <Text>
+          </StyledText>
+          <StyledText>
             With a background as a former college Quarterback and EMT, I bring a
             strong work ethic and a passion for making a difference to my work
             as a developer. I'm always eager to take on new challenges, expand
             my skills, and collaborate with others to build innovative
             solutions.
-          </Text>
+          </StyledText>
         </AboutTextWrap>
         <ProfilePicWrap>
           <StyledImage src={profilepic} alt="profile_pic" />

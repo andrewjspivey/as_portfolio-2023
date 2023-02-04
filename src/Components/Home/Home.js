@@ -6,6 +6,7 @@ import WorkSection from "../WorkSection/WorkSection";
 import LeftSideMenu from "../LeftSideMenu/LeftSideMenu";
 import AboutMe from "../AboutMe/AboutMe";
 import ProjectSection from "../ProjectsSection/ProjectsSection";
+import Contact from "../Contact/Contact";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const Home = () => {
       <AboutMe />
       <WorkSection />
       <ProjectSection />
+      <Contact />
     </PageWrapper>
   );
 };

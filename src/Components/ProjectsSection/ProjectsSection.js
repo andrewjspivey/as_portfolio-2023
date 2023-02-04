@@ -42,7 +42,7 @@ const ProjectSection = () => {
       <Header>
         <Title>
           <TitleNumber>03.</TitleNumber>
-          PROJECTS
+          Projects
         </Title>
         <SubHeader>Some projects i've done</SubHeader>
       </Header>

@@ -50,12 +50,20 @@ const LeftSideMenu = () => {
     <SideMenuContainer>
       <StyledList>
         <StyledListItem>
-          <a href="https://github.com/andrewjspivey">
+          <a
+            href="https://github.com/andrewjspivey"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiGithub size="1.5rem" color="#81a7bd" />
           </a>
         </StyledListItem>
         <StyledListItem>
-          <a href="/">
+          <a
+            href="https://www.linkedin.com/in/andrewspivey/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiLinkedin size="1.5rem" color="#81a7bd" />
           </a>
         </StyledListItem>

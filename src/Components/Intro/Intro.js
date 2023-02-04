@@ -11,10 +11,10 @@ const IntroWrapper = styled.section`
     margin: 3rem 0rem 8rem 0rem;
   `};
   ${media.desktop`
-    margin: 4rem 0rem 8rem 0rem;
+    margin: 4rem 0rem 10rem 0rem;
   `};
   ${media.widescreen`
-    margin: 6rem 0rem 8rem 6rem;
+    margin: 6rem 0rem 12rem 7rem;
   `};
 `;
 

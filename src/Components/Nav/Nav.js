@@ -155,7 +155,7 @@ const Logo = styled.img`
   cursor: pointer;
 `;
 
-const StyledNumber = styled.span`
+export const StyledNumber = styled.span`
   font-family: "SF Mono", sans-serif;
   font-size: 1rem;
   color: ${({ theme }) => theme.primaryHover};
