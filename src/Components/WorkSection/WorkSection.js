@@ -43,7 +43,7 @@ export const SubHeader = styled.span`
   padding: 0rem 0rem 1rem 0rem;
 `;
 
-const MobileMenuWrap = styled.div`
+export const MobileMenuWrap = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
@@ -53,7 +53,7 @@ const MobileMenuWrap = styled.div`
   margin-left: -25px; */
 `;
 
-const MenuButton = styled.button`
+export const MenuButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@ const WorkSection = () => {
           onClick={() => HandleWhichProject(1)}
           selectedTab={selectedTab}
           activeNum={1}
-          aria-label="Centripoint"
+          aria-label="Bitwise"
         >
           Bitwise
         </MenuButton>

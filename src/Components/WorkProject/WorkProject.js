@@ -4,7 +4,7 @@ import media from "../../media";
 import { TbCaretRight } from "react-icons/tb";
 import ImageSlider from "../ImageSlider/ImageSlider";
 
-const ProjectContainer = styled.div`
+export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@ const ProjectContainer = styled.div`
   `}
 `;
 
-const ImageContainer = styled.div`
+export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -24,7 +24,7 @@ const ImageContainer = styled.div`
   `}
 `;
 
-const Description = styled.div`
+export const Description = styled.div`
   width: 100%;
   align-self: center;
   ${media.tablet`
@@ -32,7 +32,7 @@ const Description = styled.div`
   `};
 `;
 
-const TitleWrap = styled.div`
+export const TitleWrap = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ const TitleWrap = styled.div`
   `};
 `;
 
-const ProjectTitle = styled.span`
+export const ProjectTitle = styled.span`
   font-size: 1.375rem;
   font-weight: 500;
   color: ${({ theme }) => theme.primaryLight};
@@ -51,13 +51,13 @@ const ProjectTitle = styled.span`
   `};
 `;
 
-const ProjectCompany = styled.span`
+export const ProjectCompany = styled.span`
   font-size: 1.375rem;
   font-weight: 500;
   color: ${({ theme }) => theme.primaryHover};
 `;
 
-const ProjectDescription = styled.p`
+export const ProjectDescription = styled.p`
   font-size: 1.25rem;
   font-weight: 300;
   margin: 1.25rem 0rem;
@@ -66,13 +66,13 @@ const ProjectDescription = styled.p`
   `}
 `;
 
-const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1rem;
 `;
 
-const ListContainer = styled.div`
+export const ListContainer = styled.div`
   width: 100%;
   margin-bottom: 1rem;
   ${media.tablet`
@@ -80,14 +80,14 @@ const ListContainer = styled.div`
   
   `}
 `;
-const ListItemContainer = styled.div`
+export const ListItemContainer = styled.div`
   width: 100%;
   display: flex;
   padding: 0.5rem 0rem;
   transform: translateX(-5px);
 `;
 
-const StyledList = styled.ul`
+export const StyledList = styled.ul`
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -95,22 +95,22 @@ const StyledList = styled.ul`
   width: 100%;
 `;
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   font-size: 1.125rem;
   font-weight: 300;
 `;
 
-const IconContainer = styled.div`
+export const IconContainer = styled.div`
   margin-right: 1rem;
 `;
 
-const Date = styled.span`
+export const Date = styled.span`
   font-size: 1rem;
   font-weight: 200;
   margin-bottom: 1rem;
 `;
 
-const Tech = styled.span`
+export const Tech = styled.span`
   font-style: italic;
   font-size: 1rem;
 `;
@@ -119,57 +119,65 @@ const WorkProject = ({ project }) => {
   return (
     <>
       {/* <Divider /> */}
-      <ProjectContainer>
-        <Description>
-          <TitleWrap>
-            <ProjectTitle>
-              {project.title} {project.preposition}{" "}
-            </ProjectTitle>
-            <ProjectCompany> {project.company}</ProjectCompany>
-          </TitleWrap>
-          <Date>{project.date}</Date>
-          <br />
-          <Tech>{project.tech}</Tech>
-          <ProjectDescription>{project.description.first}</ProjectDescription>
-          <ListContainer>
-            <StyledList>
-              <ListItemContainer>
-                <IconContainer>
-                  <TbCaretRight color="#66FCF1" size={24} />
-                </IconContainer>
-                <ListItem>{project.description.second}</ListItem>
-              </ListItemContainer>
-              <ListItemContainer>
-                <IconContainer>
-                  <TbCaretRight color="#66FCF1" size={24} />
-                </IconContainer>
-                <ListItem>{project.description.third}</ListItem>
-              </ListItemContainer>
-              <ListItemContainer>
-                <IconContainer>
-                  <TbCaretRight color="#66FCF1" size={24} />
-                </IconContainer>
-                <ListItem>{project.description.fourth}</ListItem>
-              </ListItemContainer>
-              <ListItemContainer>
-                <IconContainer>
-                  <TbCaretRight color="#66FCF1" size={24} />
-                </IconContainer>
-                <ListItem>{project.description.fifth}</ListItem>
-              </ListItemContainer>
-              <ListItemContainer>
-                <IconContainer>
-                  <TbCaretRight color="#66FCF1" size={24} />
-                </IconContainer>
-                <ListItem>{project.description?.sixth}</ListItem>
-              </ListItemContainer>
-            </StyledList>
-          </ListContainer>
-        </Description>
-        <ImageContainer>
-          <ImageSlider project={project} />
-        </ImageContainer>
-      </ProjectContainer>
+      {project && (
+        <ProjectContainer>
+          <Description>
+            <TitleWrap>
+              <ProjectTitle>
+                {project.title} {project.preposition}{" "}
+              </ProjectTitle>
+              <ProjectCompany> {project.company}</ProjectCompany>
+            </TitleWrap>
+            <Date>{project.date}</Date>
+            <br />
+            <Tech>{project.tech}</Tech>
+            <ProjectDescription>{project.description.first}</ProjectDescription>
+            <ListContainer>
+              <StyledList>
+                <ListItemContainer>
+                  <IconContainer>
+                    <TbCaretRight color="#66FCF1" size={24} />
+                  </IconContainer>
+                  <ListItem>{project.description.second}</ListItem>
+                </ListItemContainer>
+                <ListItemContainer>
+                  <IconContainer>
+                    <TbCaretRight color="#66FCF1" size={24} />
+                  </IconContainer>
+                  <ListItem>{project.description.third}</ListItem>
+                </ListItemContainer>
+                {project.description.fourth && (
+                  <ListItemContainer>
+                    <IconContainer>
+                      <TbCaretRight color="#66FCF1" size={24} />
+                    </IconContainer>
+                    <ListItem>{project.description?.fourth}</ListItem>
+                  </ListItemContainer>
+                )}
+                {project.description.fifth && (
+                  <ListItemContainer>
+                    <IconContainer>
+                      <TbCaretRight color="#66FCF1" size={24} />
+                    </IconContainer>
+                    <ListItem>{project.description?.fifth}</ListItem>
+                  </ListItemContainer>
+                )}
+                {project.description.sixth && (
+                  <ListItemContainer>
+                    <IconContainer>
+                      <TbCaretRight color="#66FCF1" size={24} />
+                    </IconContainer>
+                    <ListItem>{project.description?.sixth}</ListItem>
+                  </ListItemContainer>
+                )}
+              </StyledList>
+            </ListContainer>
+          </Description>
+          <ImageContainer>
+            <ImageSlider project={project} />
+          </ImageContainer>
+        </ProjectContainer>
+      )}
     </>
   );
 };

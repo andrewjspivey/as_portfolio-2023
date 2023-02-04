@@ -5,6 +5,7 @@ import Intro from "../Intro/Intro";
 import WorkSection from "../WorkSection/WorkSection";
 import LeftSideMenu from "../LeftSideMenu/LeftSideMenu";
 import AboutMe from "../AboutMe/AboutMe";
+import ProjectSection from "../ProjectsSection/ProjectsSection";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ const Home = () => {
       <Intro />
       <AboutMe />
       <WorkSection />
+      <ProjectSection />
     </PageWrapper>
   );
 };

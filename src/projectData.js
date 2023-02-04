@@ -8,6 +8,11 @@ import EBR_blog_pic from "./assets/EBR_blog_pic.png";
 import royal_code_2 from "./assets/royal_code_2.png";
 import royal_code_snip_1 from "./assets/royal_code_snip_1.png";
 import royal_sql_code from "./assets/royal_sql_code.png";
+import giphy_pic_1 from "./assets/giphy_pic_1.png";
+import anime_pic_1 from "./assets/anime_pic_1.png";
+import anime_code_1 from "./assets/anime_code_1.png";
+import anime_code_2 from "./assets/anime_code_2.png";
+import newbestfriend from "./assets/newbestfriend.png";
 
 export const projectData = {
   workProjectOne: {
@@ -82,5 +87,68 @@ export const projectData = {
         "Consulted with client throughout to complete program as sole developer in 3 months",
     },
     images: [royal_bay, royal_code_2, royal_code_snip_1, royal_sql_code],
+  },
+  personalProjectOne: {
+    title: "Giphy App",
+    preposition: "",
+    company: "",
+    date: "August 2021",
+    tech: "JavaScript, Express.js, React.js, styled-components",
+    links: {
+      live: "https://aw-gif-fun.herokuapp.com/",
+      github: "https://github.com/alphaworks-react-team/team-2-gif",
+    },
+    description: {
+      first: "Led the development of a giphy.com clone using Node.js, React.js",
+      second:
+        "Implemented RESTful API and request handling to and from Giphy API and user ",
+      third:
+        "Executed styling and functionality for homepage, categories, search, navigation, pagination, gif sharing",
+      fourth:
+        "Led team communication and github strategy for a smooth, efficient team dynamic.",
+    },
+    images: [giphy_pic_1],
+  },
+  personalProjectTwo: {
+    title: "Anime App",
+    preposition: "",
+    company: "",
+    date: "September 2021",
+    tech: "React.js, JavaScript, styled-components, APIs",
+    links: {
+      live:
+        "https://625747d6c375552bce81c279--celadon-bombolone-40eea2.netlify.app/",
+      github: "https://github.com/alphaworks-react-team/anime-team-1",
+    },
+    description: {
+      first: "Led the development of an anime app using React.js",
+      second:
+        "Implemented efficient data handling methods to retrieve anime information from a third-party API.",
+      third:
+        "Designed user-friendly interfaces for searching and browsing, searching anime, as well as viewing details about individual series.",
+      fourth:
+        "Implemented infinite scrolling for searching anime categorically utilizing Intersection Observer",
+    },
+    images: [anime_pic_1, anime_code_1, anime_code_2],
+  },
+  personalProjectThree: {
+    title: "New Best Friend",
+    preposition: "",
+    company: "",
+    date: "November 2020",
+    tech: "Python, Django, HTML, CSS",
+    links: {
+      live: "https://newbestfriend9.herokuapp.com/",
+      github: "https://github.com/andrewjspivey/New_Best_Friend",
+    },
+    description: {
+      first: "Dog adoption app built with Django during Bootcamp",
+      second:
+        "Executed all project design and functionality 2 months into coding journey",
+      third: "Interacted with Petfinder API for up to date dog adoption data",
+      fourth:
+        "Utilized Django templates, HTML, CSS to style app on own and complete in 10 days",
+    },
+    images: [newbestfriend],
   },
 };

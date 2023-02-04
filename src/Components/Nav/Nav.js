@@ -110,7 +110,7 @@ const StyledListItem = styled.li`
   padding: 0.875rem;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled.span`
   font-family: "SF Mono", sans-serif;
   font-size: 1rem;
   color: #ccd6f6;
