@@ -25,14 +25,14 @@ export const projectData = {
       first:
         "Worked as a contributing member of a professional software development team focusing on client projects - React, Django REST Framework, SCSS",
       second:
-        "Worked in agile team, utilizing scrum methodologies and strong Git/Github version control practices",
+        "Developed high priority features for client's service scheduling app, including a full calendars of events for schedulers and coaches/transporters, as well as attendance and survey dashboards (CRUD) and more",
       third:
         "Demonstrated strong proficiency in React.js, TypeScript, Redux Toolkit, and Django (Python) in a professional development setting",
       fourth:
-        "Developed and implemented valuable features including a calendar of events for schedulers and coaches/transporters, as well as attendance and survey dashboards (CRUD) and more",
+        "Worked in agile team, utilizing scrum methodologies and strong Git/Github version control practices",
       fifth:
         "Acquired new tools/tech such as TypeScript, and Django ORM quickly.",
-      sixth: "Tested and fixed many pre-existing bugs requested by client",
+      sixth: "Tested and fixed many high priority bugs/issues.",
     },
     images: [
       centripoint_calendar,

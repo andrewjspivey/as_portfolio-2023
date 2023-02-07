@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import media from "../../media";
-import AndrewSpivey_Resume from "../../assets/AndrewSpivey_Resume.pdf";
+import Andrew_Spivey_Resume_2023 from "../../assets/Andrew_Spivey_Resume_2023.pdf";
 
 const IntroWrapper = styled.section`
   display: flex;
@@ -69,7 +69,7 @@ const Intro = () => {
         and{" "}
         <a
           style={{ color: "#66FCF1" }}
-          href={AndrewSpivey_Resume}
+          href={Andrew_Spivey_Resume_2023}
           target="_blank"
           rel="noreferrer"
         >

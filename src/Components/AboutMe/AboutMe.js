@@ -90,10 +90,6 @@ const AboutMe = () => {
       <AboutContent>
         <AboutTextWrap>
           <StyledText>
-            Hello! I'm Andrew Spivey, a Developer based in Oakland, CA with the
-            drive and expertise to bring value to your company.
-          </StyledText>
-          <StyledText>
             My passion for software development blossomed while completing{" "}
             <StyledLink
               href={
@@ -126,7 +122,7 @@ const AboutMe = () => {
             >
               Bitwise Industries
             </StyledLink>
-            . At Bitwise, I worked across the stack of client projects as a
+            . At Bitwise, I worked across the stack on client projects as a
             valued asset of a professional development team.
           </StyledText>
           <StyledText>

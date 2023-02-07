@@ -44,7 +44,7 @@ const ProjectSection = () => {
           <TitleNumber>03.</TitleNumber>
           Projects
         </Title>
-        <SubHeader>Some projects i've done</SubHeader>
+        <SubHeader>Some things i've built</SubHeader>
       </Header>
       <MobileMenuWrap aria-label="projects menu">
         <MenuButton
