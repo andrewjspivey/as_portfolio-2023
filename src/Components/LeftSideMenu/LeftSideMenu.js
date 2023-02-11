@@ -31,18 +31,39 @@ const StyledList = styled.ul`
   margin: 0px;
   padding: 0px;
   list-style: none;
+  li:first-child {
+    transform: translateY(15px);
+  }
   &::after {
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 110px;
     margin: 0px auto;
-    background-color: ${({ theme }) => theme.primaryLight};
+    background-color: ${({ theme }) => theme.primaryTextColor};
   }
 `;
 
 const StyledListItem = styled.li`
-  padding: 10px;
+  padding: 15px 0px;
+`;
+
+const StyledFiGithub = styled(FiGithub)`
+  color: #81a7bd;
+  &:hover {
+    color: #66fcf1;
+    transform: translateY(-5px);
+  }
+  transition: all 0.3s ease-in-out;
+`;
+
+const StyledFiLinkedin = styled(FiLinkedin)`
+  color: #81a7bd;
+  &:hover {
+    color: #66fcf1;
+    transform: translateY(-5px);
+  }
+  transition: all 0.3s ease-in-out;
 `;
 
 const LeftSideMenu = () => {
@@ -55,7 +76,7 @@ const LeftSideMenu = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FiGithub size="1.5rem" color="#81a7bd" />
+            <StyledFiGithub size="1.5rem" />
           </a>
         </StyledListItem>
         <StyledListItem>
@@ -64,7 +85,7 @@ const LeftSideMenu = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FiLinkedin size="1.5rem" color="#81a7bd" />
+            <StyledFiLinkedin size="1.5rem" />
           </a>
         </StyledListItem>
       </StyledList>

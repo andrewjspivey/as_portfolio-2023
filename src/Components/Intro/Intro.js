@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import media from "../../media";
+import { Link } from "react-scroll";
 import Andrew_Spivey_Resume_2023 from "../../assets/Andrew_Spivey_Resume_2023.pdf";
 
 const IntroWrapper = styled.section`
@@ -16,6 +17,9 @@ const IntroWrapper = styled.section`
   ${media.widescreen`
     margin: 6rem 0rem 12rem 7rem;
   `};
+  @media (min-width: 1500px) {
+    margin: 6rem 0rem 12rem 10rem;
+  } ;
 `;
 
 export const IntroHeading = styled.span`
@@ -54,6 +58,26 @@ export const IntroStatement = styled.p`
   max-width: 850px;
 `;
 
+const ContactMeButton = styled.button`
+  outline: none;
+  border: 1px solid ${({ theme }) => theme.primaryHover};
+  color: ${({ theme }) => theme.primaryHover};
+  font-family: "SF Mono", sans-serif;
+  background-color: inherit;
+  padding: 18px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(102, 252, 241, 0.2);
+  }
+  ${media.tablet`
+    padding: 0.75rem 1rem;
+    width: 250px;
+    margin-top: 1rem;
+  `};
+`;
+
 const Intro = () => {
   return (
     <IntroWrapper>
@@ -78,6 +102,9 @@ const Intro = () => {
         My goal is to find an awesome company I can deliver business value to
         while continuing to level up my skills and grow as a developer.
       </IntroStatement>
+      <Link to="contact" spy={true} smooth={true} duration={500}>
+        <ContactMeButton>Contact Me</ContactMeButton>
+      </Link>
     </IntroWrapper>
   );
 };

@@ -114,7 +114,7 @@ const WorkSection = () => {
           <TitleNumber>02.</TitleNumber>
           Experience
         </Title>
-        <SubHeader>Client Projects and other professional work.</SubHeader>
+        <SubHeader>Professional work and client projects.</SubHeader>
       </Header>
       <MobileMenuWrap aria-label="Work projects menu">
         <MenuButton

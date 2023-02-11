@@ -27,7 +27,6 @@ const Menu = styled.nav`
   z-index: 10;
   ${media.tablet`
     flex-flow: row nowrap;
-    /* padding: 0.75rem 1.5rem; */
   `};
 `;
 
@@ -116,6 +115,9 @@ const NavLink = styled.span`
   color: #ccd6f6;
   letter-spacing: 0.0625rem;
   transition: color 0.3s linear;
+  &:hover {
+    color: ${({ theme }) => theme.primaryHover};
+  }
   ${media.tablet`
   font-size: 0.875rem;
   `};
