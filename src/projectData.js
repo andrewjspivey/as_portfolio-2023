@@ -3,11 +3,12 @@ import calendar_django_code_snap from "./assets/calendar_django_code_snap.png";
 import calendar_redux_code from "./assets/calendar_redux_code.png";
 import calendar_react_code from "./assets/calendar_react_code.png";
 import ebrecord from "./assets/ebrecord.png";
-import royal_bay from "./assets/royal_bay.png";
+import teacherClassDash from "./assets/teacherClassDash.png";
 import EBR_blog_pic from "./assets/EBR_blog_pic.png";
-import royal_code_2 from "./assets/royal_code_2.png";
-import royal_code_snip_1 from "./assets/royal_code_snip_1.png";
-import royal_sql_code from "./assets/royal_sql_code.png";
+import unfinished_drill from "./assets/unfinished_drill.png";
+import finished_drill from "./assets/finished_drill.png";
+import Chart from "./assets/Chart.png";
+import Tutorial_drill from "./assets/Tutorial_drill.png";
 import giphy_pic_1 from "./assets/giphy_pic_1.png";
 import anime_pic_1 from "./assets/anime_pic_1.png";
 import anime_code_1 from "./assets/anime_code_1.png";
@@ -16,7 +17,33 @@ import newbestfriend from "./assets/newbestfriend.png";
 
 export const projectData = {
   workProjectOne: {
-    title: "Software Developer Apprentice",
+    title: "Software Engineer",
+    preposition: "@",
+    company: "Giorgi Enterprises",
+    date: "Jan 2023 - Present",
+    tech: "React Native, Typescript, Flask, Python",
+    description: {
+      first:
+        "Led development of Genius Drills, a mobile application built for a math education company serving thousands of students, teachers, and administrators with K-12 math drills. Wrote over 90% of the entire codebase.",
+      second:
+        "Architected API models, endpoints, and services using Flask, securely managing user and class data, drill generation, scoring, results and charts tailored to the client’s security, performance, and scalability needs.",
+      third:
+        "Built interactive dashboards, visualizations, and tutorials with React Native and Typescript, providing teachers with real-time insights into student performance and offering students engaging and clear drill experiences.",
+      fourth:
+        "Developed classwork drill assignments using web sockets, enabling live monitoring and control for teachers.",
+      fifth: "Optimized performance by leveraging React Query’s caching strategies, reducing unnecessary API calls by 95%.",
+      sixth: "Wrote and maintained 300+ unit tests with Jest and Pytest, reducing reported bugs and increasing app reliability.",
+    },
+    images: [
+      teacherClassDash,
+      unfinished_drill,
+      finished_drill,
+      Chart,
+      Tutorial_drill
+    ],
+  },
+  workProjectTwo: {
+    title: "React Developer",
     preposition: "@",
     company: "Bitwise Industries",
     date: "June 2021 - Jan 2023",
@@ -41,7 +68,7 @@ export const projectData = {
       calendar_react_code,
     ],
   },
-  workProjectTwo: {
+  workProjectThree: {
     title: "Lead Developer",
     preposition: "for",
     company: "East Bay Recorders",
@@ -66,27 +93,6 @@ export const projectData = {
         "Conducted thorough testing and debugging to ensure website stability and functionality",
     },
     images: [ebrecord, EBR_blog_pic],
-  },
-  workProjectThree: {
-    title: "Developed ETL Program",
-    preposition: "for",
-    company: "Royal Ambulance",
-    date: "March 2021 - Jun 2021",
-    tech: "JavaScript, Node.js, MSSQL",
-    description: {
-      first:
-        "Created an ETL program using JavaScript, Node.js, and Microsoft SQL Server for an ambulance company to gain employee data and improve data accuracy on EMT employees",
-      second:
-        "Implemented data extraction from eso-suite schedule API, transformed data, and loaded to company's MSSQL Server DB",
-      third:
-        "Utilized JavaScript, Node.js, and MSSQL Server to automate the ETL processes and integration with the company's existing database",
-      fourth:
-        "Implemented security measures to protect sensitive employee data",
-      fifth: "Improved EMT push out times and accuracy",
-      sixth:
-        "Consulted with client throughout to complete program as sole developer in 3 months",
-    },
-    images: [royal_bay, royal_code_2, royal_code_snip_1, royal_sql_code],
   },
   personalProjectOne: {
     title: "Giphy App",

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import media from "../../media";
 import AS from "../../assets/AS.png";
-import AndrewSpivey_Resume_2023 from "../../assets/AndrewSpivey_Resume_2023.pdf";
+import AndrewSpivey_Resume_2024 from "../../assets/AndrewSpivey_Resume_2024.pdf";
 import { Link } from "react-scroll";
 
 const RegularNav = styled.nav`
@@ -266,7 +266,7 @@ const Nav = () => {
         <StyledListItem>
           <a
             style={{ color: "#66FCF1" }}
-            href={AndrewSpivey_Resume_2023}
+            href={AndrewSpivey_Resume_2024}
             target="_blank"
             rel="noreferrer"
           >
@@ -339,7 +339,7 @@ const Nav = () => {
         <StyledListItem>
           <a
             style={{ color: "#66FCF1" }}
-            href={AndrewSpivey_Resume_2023}
+            href={AndrewSpivey_Resume_2024}
             target="_blank"
             rel="noreferrer"
           >

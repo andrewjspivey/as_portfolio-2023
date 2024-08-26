@@ -106,14 +106,10 @@ const AboutMe = () => {
           </StyledText>
           <StyledText>
             Since then, I've done work for/with{" "}
-            <StyledLink href={"https://royalambulance.com"} target="_blank">
-              Royal Ambulance
-            </StyledLink>
-            ,{" "}
             <StyledLink href={"https://eastbayrecorders.com"} target="_blank">
               East Bay Recorders
             </StyledLink>
-            , and most recently,{" "}
+            ,{" "}
             <StyledLink
               href={
                 "https://bitwiseindustries.com/services/custom-development/"
@@ -122,8 +118,14 @@ const AboutMe = () => {
             >
               Bitwise Industries
             </StyledLink>
-            . At Bitwise, I worked across the stack on client projects as a
-            valued asset of a professional development team.
+            , and most recently,{" "}
+            <StyledLink
+              href={"https://spiritofmath.com/"}
+              target="_blank"
+            >
+              Spirit of Math
+            </StyledLink>
+            .
           </StyledText>
           <StyledText>
             With a background as a former college Quarterback and EMT, I bring a

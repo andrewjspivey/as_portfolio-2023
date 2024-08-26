@@ -121,9 +121,9 @@ const WorkSection = () => {
           onClick={() => HandleWhichProject(1)}
           selectedTab={selectedTab}
           activeNum={1}
-          aria-label="Bitwise"
+          aria-label="Giorgi Enterprises"
         >
-          Bitwise
+          Giorgi Enterprises
         </MenuButton>
         <MenuButton
           onClick={() => HandleWhichProject(2)}
